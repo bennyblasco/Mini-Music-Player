@@ -24,9 +24,13 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ZrI-ok-D0o"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Christian &amp; Gospel">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lci-Br-bRM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXs-Qz-Sc7">
                                         <rect key="frame" x="0.0" y="120" width="260" height="60"/>
@@ -34,19 +38,27 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="L8F-0v-JIA"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Pop">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8My-h4-Cyo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeJ-B8-SFe">
                                         <rect key="frame" x="0.0" y="240" width="260" height="60"/>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="uEK-pQ-oSX"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Hip-Hop/Rap">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHL-WB-bF2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -54,11 +66,45 @@
                                     <constraint firstAttribute="height" constant="300" id="s9b-ew-uYf"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS4-VP-4zn">
+                                <rect key="frame" x="77" y="619" width="120" height="60"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="RKs-Jh-2FF"/>
+                                    <constraint firstAttribute="height" constant="60" id="ccn-B1-cba"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ch3-ww-1oe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFH-lo-hJd">
+                                <rect key="frame" x="217" y="619" width="120" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="B3n-JW-YxV"/>
+                                    <constraint firstAttribute="height" constant="60" id="LdL-Xr-Km5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nqr-G1-Azd"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7lK-ox-paw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="Hp7-Vu-mXa"/>
                             <constraint firstItem="7lK-ox-paw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXV-8I-rRO"/>
+                            <constraint firstItem="DS4-VP-4zn" firstAttribute="leading" secondItem="7lK-ox-paw" secondAttribute="leading" id="hGS-RR-wZV"/>
+                            <constraint firstItem="DS4-VP-4zn" firstAttribute="top" secondItem="7lK-ox-paw" secondAttribute="bottom" constant="101" id="msK-QS-fBF"/>
+                            <constraint firstItem="mFH-lo-hJd" firstAttribute="centerY" secondItem="DS4-VP-4zn" secondAttribute="centerY" id="rNW-vX-1RP"/>
+                            <constraint firstItem="mFH-lo-hJd" firstAttribute="trailing" secondItem="7lK-ox-paw" secondAttribute="trailing" id="t71-rS-95R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
