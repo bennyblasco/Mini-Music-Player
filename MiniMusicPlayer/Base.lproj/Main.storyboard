@@ -151,6 +151,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Music Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyn-Jn-eof">
+                                <rect key="frame" x="134" y="549" width="146.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -159,10 +165,12 @@
                             <constraint firstItem="7lK-ox-paw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="Hp7-Vu-mXa"/>
                             <constraint firstItem="fhg-Jp-kdp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ISk-Sg-ghn"/>
                             <constraint firstItem="H3c-Qq-7P2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JB5-iE-lwp"/>
+                            <constraint firstItem="gyn-Jn-eof" firstAttribute="top" secondItem="7lK-ox-paw" secondAttribute="bottom" constant="26" id="McL-XY-ZW7"/>
                             <constraint firstItem="pMV-QJ-KwP" firstAttribute="top" secondItem="fhg-Jp-kdp" secondAttribute="bottom" constant="32" id="RxK-LY-htR"/>
                             <constraint firstItem="H3c-Qq-7P2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aJg-14-7ny"/>
                             <constraint firstItem="7lK-ox-paw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXV-8I-rRO"/>
                             <constraint firstItem="fhg-Jp-kdp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="fDj-Q3-xx4"/>
+                            <constraint firstItem="gyn-Jn-eof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jTS-Rv-jnU"/>
                             <constraint firstItem="HzH-6Y-bgn" firstAttribute="top" secondItem="H3c-Qq-7P2" secondAttribute="bottom" constant="23" id="jnT-29-BfE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -170,6 +178,7 @@
                     <connections>
                         <outlet property="christainButton" destination="pMV-QJ-KwP" id="qS2-Op-1Ys"/>
                         <outlet property="hiphopButton" destination="YeJ-B8-SFe" id="K9H-FP-jDk"/>
+                        <outlet property="infoLabel" destination="gyn-Jn-eof" id="tTZ-LD-ryw"/>
                         <outlet property="jazzButoon" destination="hXs-Qz-Sc7" id="mGh-h8-SKb"/>
                         <outlet property="nextButton" destination="mFH-lo-hJd" id="fld-Jx-osX"/>
                         <outlet property="pauseButton" destination="FdS-7Z-svn" id="9UH-Q0-TxB"/>

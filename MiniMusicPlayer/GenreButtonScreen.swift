@@ -11,6 +11,7 @@ import MediaPlayer
 
 class GenreButtonScreen: UIViewController {
     
+    @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var christainButton: UIButton!
     @IBOutlet weak var jazzButoon: UIButton!
@@ -41,6 +42,7 @@ class GenreButtonScreen: UIViewController {
         pauseButton.isHidden = true
         nextButton.isHidden = true
         previousButton.isHidden = true
+        infoLabel.isHidden = false
     }
     
    
