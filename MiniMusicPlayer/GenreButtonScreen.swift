@@ -35,14 +35,26 @@ class GenreButtonScreen: UIViewController {
         pauseButton.layer.cornerRadius = 10.0  
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        stopButton.isHidden = true
+        playButton.isHidden = true
+        pauseButton.isHidden = true
+        nextButton.isHidden = true
+        previousButton.isHidden = true
+    }
+    
    
     @IBAction func genreButtonTapped(_ sender: UIButton) {
         MPMediaLibrary.requestAuthorization { (status) in
             if status == .authorized{
                 self.playGenre(genre: sender.currentTitle!)
-                
             }
         }
+        self.stopButton.isHidden = false
+        self.playButton.isHidden = false
+        self.pauseButton.isHidden = false
+        self.nextButton.isHidden = false
+        self.previousButton.isHidden = false
     }
     @IBAction func stopButtonTapped(_ sender: UIButton) {
         musicPlayer.stop()
