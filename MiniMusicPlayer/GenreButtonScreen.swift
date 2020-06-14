@@ -11,18 +11,36 @@ import MediaPlayer
 
 class GenreButtonScreen: UIViewController {
     
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var christainButton: UIButton!
+    @IBOutlet weak var jazzButoon: UIButton!
+    @IBOutlet weak var hiphopButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var previousButton: UIButton!
+    @IBOutlet weak var pauseButton: UIButton!
     var musicPlayer = MPMusicPlayerController.applicationMusicPlayer
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        christainButton.layer.cornerRadius = 10.0
+        jazzButoon.layer.cornerRadius = 10.0
+        hiphopButton.layer.cornerRadius = 10.0
+        stopButton.layer.cornerRadius = 10.0
+        nextButton.layer.cornerRadius = 10.0
+        previousButton.layer.cornerRadius = 10.0
+        playButton.layer.cornerRadius = 25.0
+        pauseButton.layer.cornerRadius = 10.0  
     }
     
+   
     @IBAction func genreButtonTapped(_ sender: UIButton) {
         MPMediaLibrary.requestAuthorization { (status) in
             if status == .authorized{
                 self.playGenre(genre: sender.currentTitle!)
+                
             }
         }
     }
@@ -30,8 +48,20 @@ class GenreButtonScreen: UIViewController {
         musicPlayer.stop()
     }
     
+    @IBAction func previousButtonTapped(_ sender: UIButton) {
+        musicPlayer.play()
+        musicPlayer.skipToPreviousItem()
+    }
     @IBAction func nextButtonTapped(_ sender: UIButton) {
+        musicPlayer.play()
         musicPlayer.skipToNextItem()
+    }
+    
+    @IBAction func playButtonTapped(_ sender: UIButton) {
+        musicPlayer.play()
+    }
+    @IBAction func PausePlay(_ sender: UIButton) {
+            musicPlayer.pause()
     }
     
     func playGenre(genre: String){
