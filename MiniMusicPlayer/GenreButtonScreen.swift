@@ -57,7 +57,9 @@ class GenreButtonScreen: UIViewController {
         self.pauseButton.isHidden = false
         self.nextButton.isHidden = false
         self.previousButton.isHidden = false
+        infoLabel.isHidden = true
     }
+    
     @IBAction func stopButtonTapped(_ sender: UIButton) {
         musicPlayer.stop()
     }
