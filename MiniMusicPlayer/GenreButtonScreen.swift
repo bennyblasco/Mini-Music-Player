@@ -49,7 +49,7 @@ class GenreButtonScreen: UIViewController {
     @IBAction func genreButtonTapped(_ sender: UIButton) {
         MPMediaLibrary.requestAuthorization { (status) in
             if status == .authorized{
-                self.playGenre(genre: sender.currentTitle!)
+                self.playGenre(genre: sender.currentTitle!) //Plays the Genre of the music of the title of the button
             }
         }
         self.stopButton.isHidden = false
