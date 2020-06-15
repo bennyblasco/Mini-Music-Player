@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		18FF18C12495645300F32BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF18C02495645300F32BF9 /* AppDelegate.swift */; };
 		18FF18C32495645300F32BF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF18C22495645300F32BF9 /* SceneDelegate.swift */; };
-		18FF18C52495645300F32BF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF18C42495645300F32BF9 /* ViewController.swift */; };
 		18FF18C82495645300F32BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FF18C62495645300F32BF9 /* Main.storyboard */; };
 		18FF18CB2495645300F32BF9 /* MiniMusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18FF18C92495645300F32BF9 /* MiniMusicPlayer.xcdatamodeld */; };
 		18FF18CD2495645900F32BF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FF18CC2495645900F32BF9 /* Assets.xcassets */; };
 		18FF18D02495645900F32BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FF18CE2495645900F32BF9 /* LaunchScreen.storyboard */; };
 		18FF18DB2495645A00F32BF9 /* MiniMusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF18DA2495645A00F32BF9 /* MiniMusicPlayerTests.swift */; };
 		18FF18E62495645A00F32BF9 /* MiniMusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF18E52495645A00F32BF9 /* MiniMusicPlayerUITests.swift */; };
+		18FF18F4249564CD00F32BF9 /* GenreButtonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF18F3249564CD00F32BF9 /* GenreButtonScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18FF18BD2495645300F32BF9 /* MiniMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FF18BD2495645300F32BF9 /* Mini Shuffle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini Shuffle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FF18C02495645300F32BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FF18C22495645300F32BF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18FF18C42495645300F32BF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18FF18C72495645300F32BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18FF18CA2495645300F32BF9 /* MiniMusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniMusicPlayer.xcdatamodel; sourceTree = "<group>"; };
 		18FF18CC2495645900F32BF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		18FF18E12495645A00F32BF9 /* MiniMusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniMusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FF18E52495645A00F32BF9 /* MiniMusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMusicPlayerUITests.swift; sourceTree = "<group>"; };
 		18FF18E72495645A00F32BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FF18F3249564CD00F32BF9 /* GenreButtonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreButtonScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 		18FF18BE2495645300F32BF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18FF18BD2495645300F32BF9 /* MiniMusicPlayer.app */,
+				18FF18BD2495645300F32BF9 /* Mini Shuffle.app */,
 				18FF18D62495645A00F32BF9 /* MiniMusicPlayerTests.xctest */,
 				18FF18E12495645A00F32BF9 /* MiniMusicPlayerUITests.xctest */,
 			);
@@ -103,7 +103,7 @@
 			children = (
 				18FF18C02495645300F32BF9 /* AppDelegate.swift */,
 				18FF18C22495645300F32BF9 /* SceneDelegate.swift */,
-				18FF18C42495645300F32BF9 /* ViewController.swift */,
+				18FF18F3249564CD00F32BF9 /* GenreButtonScreen.swift */,
 				18FF18C62495645300F32BF9 /* Main.storyboard */,
 				18FF18CC2495645900F32BF9 /* Assets.xcassets */,
 				18FF18CE2495645900F32BF9 /* LaunchScreen.storyboard */,
@@ -148,7 +148,7 @@
 			);
 			name = MiniMusicPlayer;
 			productName = MiniMusicPlayer;
-			productReference = 18FF18BD2495645300F32BF9 /* MiniMusicPlayer.app */;
+			productReference = 18FF18BD2495645300F32BF9 /* Mini Shuffle.app */;
 			productType = "com.apple.product-type.application";
 		};
 		18FF18D52495645A00F32BF9 /* MiniMusicPlayerTests */ = {
@@ -262,10 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FF18C52495645300F32BF9 /* ViewController.swift in Sources */,
 				18FF18C12495645300F32BF9 /* AppDelegate.swift in Sources */,
 				18FF18C32495645300F32BF9 /* SceneDelegate.swift in Sources */,
 				18FF18CB2495645300F32BF9 /* MiniMusicPlayer.xcdatamodeld in Sources */,
+				18FF18F4249564CD00F32BF9 /* GenreButtonScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,12 +441,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 268W7E23V8;
 				INFOPLIST_FILE = MiniMusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Techelopers.MiniMusicPlayer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mini Shuffle";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,12 +460,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 268W7E23V8;
 				INFOPLIST_FILE = MiniMusicPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Techelopers.MiniMusicPlayer;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mini Shuffle";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
